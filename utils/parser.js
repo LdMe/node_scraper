@@ -12,6 +12,10 @@ class Parser {
         const { document } = dom.window;
         this.document = document;
     } 
+    getTitle() {
+        const title = this.document.querySelector('title');
+        return title.textContent;
+    }
     getLinks() {
         const links = this.document.querySelectorAll('a');
         const linksArray = Array.from(links);
@@ -23,6 +27,12 @@ class Parser {
         const imagesArray = Array.from(images);
         const srcs = imagesArray.map(image => image.src);
         return srcs;
+    }
+    getParagraphs() {
+        const paragraphs = this.document.querySelectorAll('p');
+        const paragraphsArray = Array.from(paragraphs);
+        const text = paragraphsArray.map(paragraph => paragraph.textContent);
+        return text;
     }
     
 

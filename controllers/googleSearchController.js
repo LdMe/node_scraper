@@ -9,9 +9,9 @@ const googleSearchController = {
         await scraper.init();
         const url = `https://www.google.com/search?q=${query}`;
         const html = await scraper.scrape(url);
-
         const parser = new Parser(html);
         const links = parser.getLinks();
+        scraper.close();
         return(links);
     }
 };

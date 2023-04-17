@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "jasmine"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,10 @@
   },
   "homepage": "https://github.com/LdMe/node_scraper#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
     "express": "^4.18.2",
-    "jasmine": "^4.6.0",
+    "jest": "^29.5.0",
     "jsdom": "^21.1.1",
     "nodemon": "^2.0.22",
-    "pupeteer": "^0.0.1",
     "puppeteer": "^19.9.0"
   }
 }

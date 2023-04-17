@@ -1,7 +1,7 @@
 import pupeteer from 'puppeteer';
 
 class Scraper {
-  constructor(headless = false) {
+  constructor(headless = true) {
     this.browser = null;
     this.page = null;
     this.headless = headless;
