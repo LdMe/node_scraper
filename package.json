@@ -1,0 +1,30 @@
+{
+  "name": "node_scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LdMe/node_scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LdMe/node_scraper/issues"
+  },
+  "homepage": "https://github.com/LdMe/node_scraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2",
+    "jasmine": "^4.6.0",
+    "jsdom": "^21.1.1",
+    "nodemon": "^2.0.22",
+    "pupeteer": "^0.0.1",
+    "puppeteer": "^19.9.0"
+  }
+}
