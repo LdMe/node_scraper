@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "doc": "jsdoc -c jsdoc.json -r"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
     "jsdom": "^21.1.1",
     "nodemon": "^2.0.22",
     "puppeteer": "^19.9.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.2"
   }
 }
